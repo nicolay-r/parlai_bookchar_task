@@ -1,13 +1,30 @@
+import copy
 import logging
+import os
 from typing import Optional
+
+from .build import build, TASK_NAME
 
 from parlai.core.opt import Opt
 from parlai.core.params import ParlaiParser
-from parlai.core.teachers import ParlAIDialogTeacher
+from parlai.core.teachers import FbDeprecatedDialogTeacher
+from parlai.utils.misc import warn_once
 from parlai.utils.strings import normalize_reply
 
 
-class DefaultTeacher(ParlAIDialogTeacher):
+def _path(opt, persona, use_cands):
+    # Build the data if it doesn't exist.
+    build(opt)
+    datatype = opt['datatype'].split(':')[0]
+    if datatype == 'test':
+        warn_once("WARNING: Test set not included. Setting datatype to valid.")
+        datatype = 'valid'
+    dt = datatype + '_' + persona
+    cands = '' if use_cands else '_no_cands'
+    return os.path.join(opt['datapath'], TASK_NAME, dt + cands + '.txt')
+
+
+class NormalizedTeacherTrait(object):
     @classmethod
     def add_cmdline_args(cls, parser: ParlaiParser, partial_opt: Optional[Opt] = None) -> ParlaiParser:
         super().add_cmdline_args(parser, partial_opt)
@@ -80,3 +97,22 @@ class DefaultTeacher(ParlAIDialogTeacher):
                 yield (text, labels, reward, candidates), new_episode
             else:
                 yield (text, labels, reward), new_episode
+
+
+class SelfOriginalTeacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, 'self_original', use_cands)
+        super().__init__(opt, shared)
+
+class NormalizedTeacher(NormalizedTeacherTrait, SelfOriginalTeacher):
+    pass
+
+class DefaultTeacher(SelfOriginalTeacher):
+    pass
+

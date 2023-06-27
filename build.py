@@ -6,28 +6,30 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/ban2tzw56v0f5yg4b7rhj/dataset_parlai.txt.zip?dl=1",
+        "https://www.dropbox.com/scl/fi/ban2tzw56v0f5yg4b7rhj/dataset_parlai.txt.zip?dl=1&rlkey=q22kkjvp99or5yx0cumymh1b5",
         'dataset_parlai.txt.zip',
-        '<checksum for this file>',
-        zipped=False,
+        '39410c020f5df1e3fe36f382a9af5fb4f227313707b84d5bb87bc7358bc46765',
     ),
 ]
 
+TASK_NAME = 'GutenbertBookChars'
+
 
 def build(opt):
-    dpath = os.path.join(opt['datapath'], 'SQuAD')
-    version = None
+
+    version = "v1.0"
+    dpath = os.path.join(opt['datapath'], TASK_NAME)
 
     if not build_data.built(dpath, version_string=version):
-        print('[building data: ' + dpath + ']')
+        print('building data: ' + dpath)
         if build_data.built(dpath):
             # An older version exists, so remove these outdated files.
             build_data.remove_dir(dpath)
         build_data.make_dir(dpath)
 
         # Download the data.
-        for downloadable_file in RESOURCES[:2]:
+        for downloadable_file in RESOURCES:
             downloadable_file.download_file(dpath)
 
         # Mark the data as built.
-        build_data.mark_done(dpath, version_string=version)
+        build_data.mark_done(dpath, version)
