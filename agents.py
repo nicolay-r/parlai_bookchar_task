@@ -107,7 +107,7 @@ class SelfOriginalTeacher(FbDeprecatedDialogTeacher):
             use_cands = False if cands == 'no_cands' else True
         except Exception:
             use_cands = True
-        opt['datafile'] = _path(opt, 'self_original', use_cands)
+        opt['datafile'] = _path(opt, 'original', use_cands)
         super().__init__(opt, shared)
 
 class NormalizedTeacher(NormalizedTeacherTrait, SelfOriginalTeacher):
