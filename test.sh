@@ -10,4 +10,4 @@ target=$parlai_project"/tasks/"$task_name"/"
 mkdir -p $target
 cp -r ./* $target
 
-rm -rf $parlai_dir"data/"$task_dirname
+cd $parlai_project"/scripts/" && python display_data.py --task $task_name

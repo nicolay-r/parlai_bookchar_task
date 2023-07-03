@@ -6,9 +6,9 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/ban2tzw56v0f5yg4b7rhj/dataset_parlai.txt.zip?dl=1&rlkey=q22kkjvp99or5yx0cumymh1b5",
-        'dataset_parlai.txt.zip',
-        '93f9d88116c62ea9db334063653a7bcbb71e6fd79680d42810e80f4cbed0f145',
+        "https://www.dropbox.com/scl/fi/8kidm9q1ik33suynw06ce/dataset_parlai_train_original.txt.zip?rlkey=rbaelvidz6jl730hlbdvaer6b&dl=1",
+        'dataset_parlai_train_original.txt.zip',
+        '195382b4a78e6cd960470e3561f0cd0a3077f532bcfba49ae0803360a2fe09c8',
     ),
 ]
 

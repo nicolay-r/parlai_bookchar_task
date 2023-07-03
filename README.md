@@ -15,7 +15,7 @@
 
 2. Follow the `setup.sh` to create folder `GutenbertBookChars` in the `ParlAI` project.
 
-3. Display dataset data in `parlai/scripts~~~~/`
+3. Display dataset data in `parlai/scripts/`
 ```bash
 python display_data.py --task gutenbergbookchars
 ```
