@@ -10,6 +10,11 @@ RESOURCES = [
         'dataset_parlai_train_original.txt.zip',
         '195382b4a78e6cd960470e3561f0cd0a3077f532bcfba49ae0803360a2fe09c8',
     ),
+    DownloadableFile(
+        "https://www.dropbox.com/scl/fi/7c2pl19xlwox9kb8bzz29/dataset_parlai_valid_original.txt.zip?rlkey=m72emirrwy1epz8abroquqe1p&dl=1",
+        'dataset_parlai_valid_original.txt.zip',
+        '27afce5b655dca9c52c28eccf3c0120b5cee7916023ee78fa3dff7b0253bbd38',
+    )
 ]
 
 TASK_NAME = 'GutenbertBookChars'
