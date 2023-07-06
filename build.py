@@ -6,14 +6,14 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/8kidm9q1ik33suynw06ce/dataset_parlai_train_original.txt.zip?rlkey=rbaelvidz6jl730hlbdvaer6b&dl=1",
+        "https://www.dropbox.com/scl/fi/ghguz41mk3ytrqgjfd5i1/dataset_parlai_train_original.txt.zip?rlkey=1aoenarm5dvqol3e6mg2ioto6&dl=1",
         'dataset_parlai_train_original.txt.zip',
-        '195382b4a78e6cd960470e3561f0cd0a3077f532bcfba49ae0803360a2fe09c8',
+        '8c776f06b96fd12833858095b5473cb91534583801f7bd4af92400fe10da87a8',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/7c2pl19xlwox9kb8bzz29/dataset_parlai_valid_original.txt.zip?rlkey=m72emirrwy1epz8abroquqe1p&dl=1",
+        "https://www.dropbox.com/scl/fi/gloua0tlfmsfvxy6m24cf/dataset_parlai_valid_original.txt.zip?rlkey=wopd1fcpbwz6uxsedydg87s6i&dl=1",
         'dataset_parlai_valid_original.txt.zip',
-        '27afce5b655dca9c52c28eccf3c0120b5cee7916023ee78fa3dff7b0253bbd38',
+        'a6486bed679c7b25c357e92d344a193a2e19932e7404738c8f647a8875e67d90',
     )
 ]
 
