@@ -8,12 +8,12 @@ RESOURCES = [
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/ghguz41mk3ytrqgjfd5i1/dataset_parlai_train_original.txt.zip?rlkey=1aoenarm5dvqol3e6mg2ioto6&dl=1",
         'dataset_parlai_train_original.txt.zip',
-        'a6486bed679c7b25c357e92d344a193a2e19932e7404738c8f647a8875e67d90',
+        '0c267a9cf8d578a32a7243ba9b04c1c899e47344deeea69991b58e502edda13e',
     ),
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/gloua0tlfmsfvxy6m24cf/dataset_parlai_valid_original.txt.zip?rlkey=wopd1fcpbwz6uxsedydg87s6i&dl=1",
         'dataset_parlai_valid_original.txt.zip',
-        '8c776f06b96fd12833858095b5473cb91534583801f7bd4af92400fe10da87a8',
+        'f8dccade663139857cc2db847b8c6ec51fba493a7c7f080efad02e29aed8a459',
     )
 ]
 
