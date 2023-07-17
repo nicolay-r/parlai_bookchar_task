@@ -16,14 +16,14 @@ RESOURCES = [
         'f8dccade663139857cc2db847b8c6ec51fba493a7c7f080efad02e29aed8a459',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/o80budh6xxqwgizie7cef/dataset_parlai_valid_spectrums.txt.zip?rlkey=si4ddvw5be2cfboplt3krdda7&dl=1",
+        "https://www.dropbox.com/scl/fi/wdtjdmshz2y7qms3vlplh/dataset_parlai_valid_spectrums.txt.zip?rlkey=2wzwnevttdwl7rzqg4gcrv2ql&dl=1",
         'dataset_parlai_valid_spectrums.txt.zip',
-        'f8561b2a80dec4ee65e41d35bf30a18266bc624971bf80aa6176229f13350f08',
+        'db36e70a897a69b718be7649e1a597ecae06fe72a01329846f751863e9b3df79',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/8tcjc49dsr4ditsc20o6i/dataset_parlai_train_spectrums.txt.zip?rlkey=ws0f7gparmujwcldquqalm28n&dl=1",
+        "https://www.dropbox.com/scl/fi/i1m29ij4h4he1zu3kx2kj/dataset_parlai_train_spectrums.txt.zip?rlkey=apcygoobz18yub0h5xv2jlo50&dl=1",
         'dataset_parlai_train_spectrums.txt.zip',
-        '73b4f01c5061fff2c4fa2af89c435f49f5338d776a8ce5eec7656bbb435e78b1',
+        '6d44de9a5996d9574b944b6ceb98211d736a4791efc34249127dc024de2cd83f',
     ),
 ]
 
