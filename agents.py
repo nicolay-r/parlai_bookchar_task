@@ -30,13 +30,6 @@ class NormalizedTeacherTrait(object):
         super().add_cmdline_args(parser, partial_opt)
         agent = parser.add_argument_group('NormalizedTeacher arguments')
         agent.add_argument(
-            '--your-persona-first',
-            type='bool',
-            default=True,
-            help="whether to prepend your persona followed by partner's persona. "
-                 "True by default to be consistent with the BothTeach",
-        )
-        agent.add_argument(
             '--max-num-turns',
             type=int,
             default=-1,
@@ -46,12 +39,10 @@ class NormalizedTeacherTrait(object):
 
     def __init__(self, opt, shared=None):
         self.max_num_turns = opt["max_num_turns"]
-        self.your_persona_first = opt["your_persona_first"]
         super().__init__(opt, shared)
 
     def normalize_replies(self, x):
         xs = x.split('\n')
-        your_personas = []
         partner_personas = []
         non_personas = []
         for x in xs:
@@ -64,17 +55,12 @@ class NormalizedTeacherTrait(object):
                 x = normalize_reply(x)
                 non_personas.append(x)
         xs2 = []
-        if self.your_persona_first:
-            xs2.extend(your_personas)
-            xs2.extend(partner_personas)
-        else:
-            xs2.extend(partner_personas)
-            xs2.extend(your_personas)
+        xs2.extend(partner_personas)
         xs2.extend(non_personas)
         return '\n'.join(xs2)
 
     def setup_data(self, path):
-        logging.info(f"loading normalized fbdialog data: {path}")
+        logging.info(f"loading normalized gutenberg data: {path}")
         exs_counter = 0
         for data, new_episode in super().setup_data(path):
             text, labels, reward = data[:3]
@@ -93,7 +79,7 @@ class NormalizedTeacherTrait(object):
                 yield (text, labels, reward), new_episode
 
 
-class SelfOriginalTeacher(FbDeprecatedDialogTeacher):
+class OriginalTeacher(FbDeprecatedDialogTeacher):
     def __init__(self, opt, shared=None):
         opt = copy.deepcopy(opt)
         try:
@@ -104,9 +90,27 @@ class SelfOriginalTeacher(FbDeprecatedDialogTeacher):
         opt['datafile'] = _path(opt, 'original', use_cands)
         super().__init__(opt, shared)
 
-class NormalizedTeacher(NormalizedTeacherTrait, SelfOriginalTeacher):
+
+class SpectrumTeacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, 'spectrums', use_cands)
+        super().__init__(opt, shared)
+
+
+class NormalizedTeacher(NormalizedTeacherTrait, OriginalTeacher):
     pass
 
-class DefaultTeacher(SelfOriginalTeacher):
+
+class OtherNormalizedTeacher(NormalizedTeacherTrait, SpectrumTeacher):
+    pass
+
+
+class DefaultTeacher(OriginalTeacher):
     pass
 
