@@ -55,16 +55,10 @@ class NormalizedTeacherTrait(object):
         partner_personas = []
         non_personas = []
         for x in xs:
-            if x.startswith('your persona: '):
-                # Normalize the sentence appearing after 'your persona:'
-                x = x[len('your persona: '):]
+            if x.startswith("persona: "):
+                x = x[len("persona: "):]
                 x = normalize_reply(x)
-                x = 'your persona: ' + x
-                your_personas.append(x)
-            elif x.startswith("partner's persona: "):
-                x = x[len("partner's persona: "):]
-                x = normalize_reply(x)
-                x = "partner's persona: " + x
+                x = "persona: " + x
                 partner_personas.append(x)
             else:
                 x = normalize_reply(x)
