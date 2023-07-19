@@ -3,19 +3,18 @@
 1.Add this entry in task registry:
 ```
 {
-    "id": "GutenbertBookChars",
-    "display_name": "GutenbertBookChars",
-    "task": "gutenbergbookchars",
-    "tags": ["ChiteChat"],
+    "id": "GutenbergSR",
+    "display_name": "GutenbergSR",
+    "task": "gutenbergsr",
     "description": (
-        "Dataset of speaker utterances from ProjectGutenberg with their spectrums"
+        "Dataset of speaker recognition from ProjectGutenberg with their spectrums"
     )
 }
 ```
 
-2. Follow the `setup.sh` to create folder `GutenbertBookChars` in the `ParlAI` project.
+2. Follow the `setup.sh` to create folder `GutenbertSR` in the `ParlAI` project.
 
 3. Display dataset data in `parlai/scripts/`
 ```bash
-python display_data.py --task gutenbergbookchars
+python display_data.py --task gutenbergsr
 ```

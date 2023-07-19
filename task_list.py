@@ -10,12 +10,11 @@ tags associated with them.
 
 task_list = [
     {
-        "id": "GutenbertBookChars",
-        "display_name": "GutenbertBookChars",
-        "task": "gutenbergbookchars",
-        "tags": ["ChiteChat"],
+        "id": "GutenbergSR",
+        "display_name": "GutenbergSR",
+        "task": "gutenbergsr",
         "description": (
-            "Dataset of speaker utterances from ProjectGutenberg with their spectrums"
+            "Dataset of speaker recognition from ProjectGutenberg with their spectrums"
         )
     },
     {

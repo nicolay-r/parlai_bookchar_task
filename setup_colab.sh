@@ -1,8 +1,8 @@
 #!/bin/bash
 
 parlai_project="/usr/local/lib/python3.8/dist-packages/parlai"
-task_name="gutenbergbookchars"
-task_dirname="GutenbertBookChars"
+task_name="gutenbergsr"
+task_dirname="GutenbergSR"
 
 target_tasks=$parlai_project"/tasks/"
 target_task=$target_tasks$task_name"/"
