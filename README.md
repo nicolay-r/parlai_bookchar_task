@@ -12,7 +12,7 @@
 }
 ```
 
-2. Follow the `setup.sh` to create folder `GutenbertSR` in the `ParlAI` project.
+2. Follow the `setup.sh` to create folder `GutenbergSR` in the `ParlAI` project.
 
 3. Display dataset data in `parlai/scripts/`
 ```bash

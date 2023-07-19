@@ -27,7 +27,7 @@ RESOURCES = [
     ),
 ]
 
-TASK_NAME = 'GutenbertBookChars'
+TASK_NAME = 'GutenbergSR'
 
 
 def build(opt):
