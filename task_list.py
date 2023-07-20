@@ -12,6 +12,7 @@ task_list = [
     {
         "id": "GutenbergSR",
         "display_name": "GutenbergSR",
+        "tags": ["QA"],
         "task": "gutenbergsr",
         "description": (
             "Dataset of speaker recognition from ProjectGutenberg with their spectrums"
