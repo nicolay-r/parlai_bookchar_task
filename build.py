@@ -8,10 +8,12 @@ RESOURCES = [
     DownloadableFile(
         "https://www.dropbox.com/s/e0b968zedfwtzvq/utterance_speaker_train.txt?dl=0",
         'utterance_speaker_train.txt',
+        'b0a9c223421c8da820430a8bc229d9e242c6c330b0a2664bb65b63c9649612a9'
     ),
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/rd8iu7wwkysqgy7tnkygy/utterance_speaker_test.txt?rlkey=5lmgw6t0rhjiwjb40rlvlvscf&dl=0",
         'utterance_speaker_test.txt',
+        'd0bbec77ffb15450062ffe3533d1c2bb2e8176fbe7dce20d01823757c3236b7d
     ),
 ]
 
