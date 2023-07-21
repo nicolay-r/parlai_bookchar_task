@@ -13,7 +13,7 @@ RESOURCES = [
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/rd8iu7wwkysqgy7tnkygy/utterance_speaker_test.txt?rlkey=5lmgw6t0rhjiwjb40rlvlvscf&dl=0",
         'utterance_speaker_test.txt',
-        'd0bbec77ffb15450062ffe3533d1c2bb2e8176fbe7dce20d01823757c3236b7d
+        'd0bbec77ffb15450062ffe3533d1c2bb2e8176fbe7dce20d01823757c3236b7d'
     ),
 ]
 
