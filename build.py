@@ -6,14 +6,14 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/nff5gn7r300pp25wwlsqx/utterance_speaker_train.txt.zip?rlkey=1gu8sk5lo1k7yz500wb5dhzik&dl=1",
+        "https://www.dropbox.com/scl/fi/ei3am4v4bfuxx413bs1p1/utterance_speaker_train.txt.zip?rlkey=30w9om8guvsqjh6j33okwefmx&dl=1",
         'utterance_speaker_train_original.txt.zip',
-        '505a1f0984e6fc71ee2614baa03980696ec07d2e70942e86aedd2d5b5d26e68e'
+        '7d5a3af81c731becb50cd3be807dd489ffd6803a8558a23ddb465cfef36de806'
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/m8ni8k117tf471g13nu84/utterance_speaker_test.txt.zip?rlkey=3p4ot0dfu3tvxmrihim38993y&dl=1",
+        "https://www.dropbox.com/scl/fi/fglusiz49r3ylxzcj04e1/utterance_speaker_test.txt.zip?rlkey=xuj4bxobdw3izufg8qlo6bogu&dl=1",
         'utterance_speaker_valid_original.txt.zip',
-        'bed64b031752248080aa7443e460c82a03ed637091ce99b065432db3b74925aa'
+        '7ce30fa116ddd12da43f9e0566cb6a96b5e77effdb55babf6b028e8e63c9f7e7'
     ),
 ]
 
