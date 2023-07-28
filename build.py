@@ -23,7 +23,7 @@ RESOURCES = [
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/ypbvhbed4t9us2fbyl4c4/dataset_parlai_train_spectrums.txt.zip?rlkey=hx2og8jjhyktvzv58l7bho62p&dl=1",
         'dataset_parlai_train_spectrums.txt.zip',
-        'e5e683956abe481ae134c65ec5b003a85f0402481e4acb923eca3c5b0ab6f6cf',
+        '12441eaf9659234d1ff0fe05bc4d72117fbc10e58c5880e7749f8eb11dfa308e',
     ),
 ]
 
