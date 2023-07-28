@@ -21,9 +21,9 @@ RESOURCES = [
         'db36e70a897a69b718be7649e1a597ecae06fe72a01329846f751863e9b3df79',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/i1m29ij4h4he1zu3kx2kj/dataset_parlai_train_spectrums.txt.zip?rlkey=apcygoobz18yub0h5xv2jlo50&dl=1",
+        "https://www.dropbox.com/scl/fi/ypbvhbed4t9us2fbyl4c4/dataset_parlai_train_spectrums.txt.zip?rlkey=hx2og8jjhyktvzv58l7bho62p&dl=1",
         'dataset_parlai_train_spectrums.txt.zip',
-        '6d44de9a5996d9574b944b6ceb98211d736a4791efc34249127dc024de2cd83f',
+        'e5e683956abe481ae134c65ec5b003a85f0402481e4acb923eca3c5b0ab6f6cf',
     ),
 ]
 
