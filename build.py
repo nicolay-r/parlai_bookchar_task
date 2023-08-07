@@ -6,24 +6,24 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/ghguz41mk3ytrqgjfd5i1/dataset_parlai_train_original.txt.zip?rlkey=1aoenarm5dvqol3e6mg2ioto6&dl=1",
+        "https://www.dropbox.com/scl/fi/rgdkv318bxbshdxamffqn/dataset_parlai_train_original.txt.zip?rlkey=jakg09xhsvq79w2jlblwlbib4&dl=1",
         'dataset_parlai_train_original.txt.zip',
-        '0c267a9cf8d578a32a7243ba9b04c1c899e47344deeea69991b58e502edda13e',
+        '500ce5f10bfe26306ecb6103880510d5f569e801d03b6068378496117305cc79',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/gloua0tlfmsfvxy6m24cf/dataset_parlai_valid_original.txt.zip?rlkey=wopd1fcpbwz6uxsedydg87s6i&dl=1",
+        "https://www.dropbox.com/scl/fi/dhe65940abepc9wf6t2n2/dataset_parlai_valid_original.txt.zip?rlkey=j4b39tufgrvj8awsk26v0oevn&dl=1",
         'dataset_parlai_valid_original.txt.zip',
-        'f8dccade663139857cc2db847b8c6ec51fba493a7c7f080efad02e29aed8a459',
+        '00a9f3d325dd77826f035e720265b7a8b8c5634497e2aa349417ad777ca0b00d',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/wdtjdmshz2y7qms3vlplh/dataset_parlai_valid_spectrums.txt.zip?rlkey=2wzwnevttdwl7rzqg4gcrv2ql&dl=1",
+        "https://www.dropbox.com/scl/fi/8k8ntw49xytp6dfqsr8s0/dataset_parlai_valid_spectrum.txt.zip?rlkey=w72edhrqg79qpsv4c1u17se37&dl=1",
         'dataset_parlai_valid_spectrums.txt.zip',
-        'db36e70a897a69b718be7649e1a597ecae06fe72a01329846f751863e9b3df79',
+        'b92c9f8a3b0b6da35c51fcd7e286d6b4f9906bcb17e73dde1856a1a942822fcd',
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/ypbvhbed4t9us2fbyl4c4/dataset_parlai_train_spectrums.txt.zip?rlkey=hx2og8jjhyktvzv58l7bho62p&dl=1",
+        "https://www.dropbox.com/scl/fi/pnq9cj34yaxsg2sl0aedf/dataset_parlai_train_spectrum.txt.zip?rlkey=nq96zp649mg8lbfqh5aql75sk&dl=1",
         'dataset_parlai_train_spectrums.txt.zip',
-        '12441eaf9659234d1ff0fe05bc4d72117fbc10e58c5880e7749f8eb11dfa308e',
+        'f8f36252e1972c98f779e7f864e48b7c88dbb740a9efd871dae45fe0b89c2d66',
     ),
 ]
 
