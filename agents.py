@@ -43,6 +43,18 @@ class SpectrumTeacher(FbDeprecatedDialogTeacher):
         super().__init__(opt, shared)
 
 
+class SpeakerExtractionTeacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, 'se', use_cands)
+        super().__init__(opt, shared)
+
+
 class DefaultTeacher(OriginalTeacher):
     pass
 
