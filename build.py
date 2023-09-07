@@ -6,15 +6,15 @@ import parlai.core.build_data as build_data
 
 RESOURCES = [
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/plxlxggy7vxskzggzdhin/utterance_speaker_train_original.txt.zip?rlkey=ydxbjirqf2gup3wob9wcet2f3&dl=1",
-        'utterance_speaker_train_original.txt.zip',
-        '2fdc9020af682744f4813d2f991f6423c403b05633007211720194f37fbace16'
+        "https://www.dropbox.com/scl/fi/b1ukv0orjgmdg6slcltmj/dataset_parlai_train_dialog_original.txt.zip?rlkey=g81ontblxg8ze8wa195pu6ntw&dl=1",
+        'dataset_parlai_train_dialog_original.txt.zip',
+        '396f1153ef4c4fb686ebae581f3008a2276ac24d019dfd3af744cf80aba41e35'
     ),
     DownloadableFile(
-        "https://www.dropbox.com/scl/fi/vbz6wf64xqlaz7x9c4rqo/utterance_speaker_valid_original.txt.zip?rlkey=rnfwng8e2w188smx0k55ycvac&dl=1",
-        'utterance_speaker_valid_original.txt.zip',
-        'c4315177580bb6b716d68216014c3479b7e74ed69b82ef393517262de805c428'
-    ),
+        "https://www.dropbox.com/scl/fi/jnpj8acsjhoq9cgj4x0zj/dataset_parlai_train_dialog_spectrum.txt.zip?rlkey=jvjly9szxbn24lh1dy0c0ksmd&dl=1",
+        'dataset_parlai_train_dialog_spectrum.txt.zip',
+        '3732c3f5ea35de96e5950f983fc0f569be67337d63865dc08efe48a03acc75df'
+    )
 ]
 
 TASK_NAME = 'GutenbergSR'
