@@ -43,6 +43,71 @@ class SpectrumTeacher(FbDeprecatedDialogTeacher):
         super().__init__(opt, shared)
 
 
+class S1Teacher(FbDeprecatedDialogTeacher):
+    """Speaker 1"""
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '139_1', use_cands)
+        super().__init__(opt, shared)
+
+
+class S2Teacher(FbDeprecatedDialogTeacher):
+    """Speaker 2"""
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '155_21', use_cands)
+        super().__init__(opt, shared)
+
+
+class S3Teacher(FbDeprecatedDialogTeacher):
+    """Speaker 3"""
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '403_3', use_cands)
+        super().__init__(opt, shared)
+
+
+class S4Teacher(FbDeprecatedDialogTeacher):
+    """Speaker 4"""
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '507_3', use_cands)
+        super().__init__(opt, shared)
+
+
+class S5Teacher(FbDeprecatedDialogTeacher):
+    """Speaker 5"""
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '1257_9', use_cands)
+        super().__init__(opt, shared)
+
+
 class DefaultTeacher(OriginalTeacher):
     pass
 
