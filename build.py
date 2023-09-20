@@ -9,12 +9,22 @@ RESOURCES = [
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/b1ukv0orjgmdg6slcltmj/dataset_parlai_train_dialog_original.txt.zip?rlkey=g81ontblxg8ze8wa195pu6ntw&dl=1",
         'dataset_parlai_train_dialog_original.txt.zip',
-        '396f1153ef4c4fb686ebae581f3008a2276ac24d019dfd3af744cf80aba41e35'
+        '5d50691da48c18eb43ae1b847fb0a5b9f31941d079db31117b706304780784b5'
     ),
     DownloadableFile(
         "https://www.dropbox.com/scl/fi/jnpj8acsjhoq9cgj4x0zj/dataset_parlai_train_dialog_spectrum.txt.zip?rlkey=jvjly9szxbn24lh1dy0c0ksmd&dl=1",
         'dataset_parlai_train_dialog_spectrum.txt.zip',
-        '3732c3f5ea35de96e5950f983fc0f569be67337d63865dc08efe48a03acc75df'
+        '33efe4eeb1d4f2cb671611f18865d06ad950066e5cb8e5bf1e9282ac5c6aa229'
+    ),
+    DownloadableFile(
+        "https://www.dropbox.com/scl/fi/a8d49ui1r2rfm4kgrarym/dataset_parlai_valid_dialog_original.txt.zip?rlkey=bcrue4py1u2v4u6zamdksni3z&dl=1",
+        'dataset_parlai_valid_dialog_original.txt.zip',
+        '25b6fe5644d580b39a87cc18cc5413a3c5c3f6409990085cb4e07a5758f4be01'
+    ),
+    DownloadableFile(
+        "https://www.dropbox.com/scl/fi/9holfn0j3y1m81hpy89qc/dataset_parlai_valid_dialog_spectrum.txt.zip?rlkey=zxpxsqz0qclfcm26xvomqxntp&dl=1",
+        'dataset_parlai_valid_dialog_spectrum.txt.zip',
+        '8f9850a699c86c300b7988813cc31611fa6f5daaeef317c8e5901da9f08eb44f'
     ),
     # Data for Speaker-Classification/Extraction problem
     DownloadableFile(
