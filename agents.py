@@ -55,6 +55,66 @@ class SpeakerExtractionTeacher(FbDeprecatedDialogTeacher):
         super().__init__(opt, shared)
 
 
+class S1Teacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '153_2', use_cands)
+        super().__init__(opt, shared)
+
+
+class S2Teacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '403_3', use_cands)
+        super().__init__(opt, shared)
+
+
+class S3Teacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '1257_7', use_cands)
+        super().__init__(opt, shared)
+
+
+class S4Teacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '1257_9', use_cands)
+        super().__init__(opt, shared)
+
+
+class S5Teacher(FbDeprecatedDialogTeacher):
+    def __init__(self, opt, shared=None):
+        opt = copy.deepcopy(opt)
+        try:
+            cands = opt['task'].split(":")[2]
+            use_cands = False if cands == 'no_cands' else True
+        except Exception:
+            use_cands = True
+        opt['datafile'] = _path(opt, '1258_8', use_cands)
+        super().__init__(opt, shared)
+        
+
 class DefaultTeacher(OriginalTeacher):
     pass
 
