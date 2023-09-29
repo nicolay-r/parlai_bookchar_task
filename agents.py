@@ -39,7 +39,7 @@ class SpectrumTeacher(FbDeprecatedDialogTeacher):
             use_cands = False if cands == 'no_cands' else True
         except Exception:
             use_cands = True
-        opt['datafile'] = _path(opt, 'spectrums', use_cands)
+        opt['datafile'] = _path(opt, 'spectrum', use_cands)
         super().__init__(opt, shared)
 
 
